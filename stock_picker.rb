@@ -7,7 +7,7 @@ def stock_picker(prices)
     end
   end
   # we need to get our highest profit and return only the desired values array
-  output = results.max_by { |k, v| k }.flatten.pop(2)
+  output = results.max_by { |key| key }.flatten.pop(2)
   return output
 end
 
